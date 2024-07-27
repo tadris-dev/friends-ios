@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */; };
+		225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */; };
+		2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* FriendsAppState.swift */; };
+		2285BE452C542CDE00BA5602 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE442C542CDE00BA5602 /* Friend.swift */; };
+		2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE472C5431AB00BA5602 /* RootCoordinator.swift */; };
+		2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4A2C54378B00BA5602 /* Binding.swift */; };
+		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
+		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
 		22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D002C4D435C000E6E71 /* FriendsApp.swift */; };
-		22F56D032C4D435C000E6E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D022C4D435C000E6E71 /* ContentView.swift */; };
 		22F56D052C4D435D000E6E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F56D042C4D435D000E6E71 /* Assets.xcassets */; };
-		22F56D082C4D435D000E6E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F56D072C4D435D000E6E71 /* Preview Assets.xcassets */; };
+		22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */; };
+		22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D162C4D70A6000E6E71 /* FriendImageView.swift */; };
+		22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D182C4E630A000E6E71 /* FriendsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
+		225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsNavigationView.swift; sourceTree = "<group>"; };
+		2285BE412C542B7A00BA5602 /* FriendsAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAppState.swift; sourceTree = "<group>"; };
+		2285BE442C542CDE00BA5602 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		2285BE472C5431AB00BA5602 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2285BE4A2C54378B00BA5602 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
+		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		22F56CFD2C4D435C000E6E71 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F56D002C4D435C000E6E71 /* FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsApp.swift; sourceTree = "<group>"; };
-		22F56D022C4D435C000E6E71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22F56D042C4D435D000E6E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22F56D072C4D435D000E6E71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMapView.swift; sourceTree = "<group>"; };
+		22F56D162C4D70A6000E6E71 /* FriendImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendImageView.swift; sourceTree = "<group>"; };
+		22F56D182C4E630A000E6E71 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225405D22C55658400E9F5D0 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2285BE462C54316E00BA5602 /* Coordinators */,
+				22F56D102C4D6F4C000E6E71 /* Scenes */,
+				22F56D142C4D707F000E6E71 /* Views */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		2285BE432C542C9E00BA5602 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2285BE4C2C54441500BA5602 /* Helpers */,
+				2285BE442C542CDE00BA5602 /* Friend.swift */,
+				2285BE4F2C544AE700BA5602 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2285BE462C54316E00BA5602 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2285BE472C5431AB00BA5602 /* RootCoordinator.swift */,
+				225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2285BE492C54377B00BA5602 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2285BE4A2C54378B00BA5602 /* Binding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2285BE4C2C54441500BA5602 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		22F56CF42C4D435C000E6E71 = {
 			isa = PBXGroup;
 			children = (
@@ -51,20 +114,32 @@
 		22F56CFF2C4D435C000E6E71 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				22F56D002C4D435C000E6E71 /* FriendsApp.swift */,
-				22F56D022C4D435C000E6E71 /* ContentView.swift */,
 				22F56D042C4D435D000E6E71 /* Assets.xcassets */,
-				22F56D062C4D435D000E6E71 /* Preview Content */,
+				22F56D002C4D435C000E6E71 /* FriendsApp.swift */,
+				2285BE412C542B7A00BA5602 /* FriendsAppState.swift */,
+				225405D22C55658400E9F5D0 /* Interfaces */,
+				2285BE492C54377B00BA5602 /* Extensions */,
+				2285BE432C542C9E00BA5602 /* Models */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
 		};
-		22F56D062C4D435D000E6E71 /* Preview Content */ = {
+		22F56D102C4D6F4C000E6E71 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				22F56D072C4D435D000E6E71 /* Preview Assets.xcassets */,
+				22F56D182C4E630A000E6E71 /* FriendsListView.swift */,
+				22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */,
 			);
-			path = "Preview Content";
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		22F56D142C4D707F000E6E71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
+				225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F56D082C4D435D000E6E71 /* Preview Assets.xcassets in Resources */,
 				22F56D052C4D435D000E6E71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F56D032C4D435C000E6E71 /* ContentView.swift in Sources */,
+				2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */,
+				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
+				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
+				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
+				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
+				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
+				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
+				225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */,
+				2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */,
+				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
+				225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -271,10 +355,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Friends/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = QT27QDFZ7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,8 +373,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.Friends;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,10 +392,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Friends/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = QT27QDFZ7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,8 +410,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.Friends;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tadris.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

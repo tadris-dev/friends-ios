@@ -1,17 +1,19 @@
-//
-//  FriendsApp.swift
-//  Friends
-//
-//  Created by Tim Fraedrich on 21.07.24.
-//
-
 import SwiftUI
+import CoreLocation
 
 @main
 struct FriendsApp: App {
+    
+    @ObservedObject private var appState = FriendsAppState(friends: Friend.exampleFriends)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootCoordinator()
+                .environmentObject(appState)
         }
+    }
+    
+    init() {
+        CLLocationManager().requestWhenInUseAuthorization()
     }
 }
