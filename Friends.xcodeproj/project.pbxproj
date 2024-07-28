@@ -15,6 +15,7 @@
 		2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4A2C54378B00BA5602 /* Binding.swift */; };
 		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
+		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
 		22CC25922C56EBE400240431 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC25912C56EBE400240431 /* Logger.swift */; };
 		22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D002C4D435C000E6E71 /* FriendsApp.swift */; };
 		22F56D052C4D435D000E6E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F56D042C4D435D000E6E71 /* Assets.xcassets */; };
@@ -32,6 +33,8 @@
 		2285BE4A2C54378B00BA5602 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22CC25912C56EBE400240431 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		22F56CFD2C4D435C000E6E71 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F56D002C4D435C000E6E71 /* FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsApp.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
+				22CC258E2C568B8D00240431 /* LocationService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +121,7 @@
 		22F56CFF2C4D435C000E6E71 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				22CC25902C568F6600240431 /* Info.plist */,
 				22F56D042C4D435D000E6E71 /* Assets.xcassets */,
 				22F56D002C4D435C000E6E71 /* FriendsApp.swift */,
 				2285BE412C542B7A00BA5602 /* FriendsAppState.swift */,
@@ -224,6 +229,7 @@
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
 				225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */,
+				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
 				2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */,
 				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
 				225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */,
@@ -363,6 +369,7 @@
 				DEVELOPMENT_TEAM = QT27QDFZ7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Friends/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
@@ -400,6 +407,7 @@
 				DEVELOPMENT_TEAM = QT27QDFZ7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Friends/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";

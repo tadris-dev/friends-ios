@@ -12,8 +12,4 @@ struct FriendsApp: App {
                 .environmentObject(appState)
         }
     }
-    
-    init() {
-        CLLocationManager().requestWhenInUseAuthorization()
-    }
 }
