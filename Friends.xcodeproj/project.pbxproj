@@ -15,6 +15,7 @@
 		2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4A2C54378B00BA5602 /* Binding.swift */; };
 		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
+		22CC25922C56EBE400240431 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC25912C56EBE400240431 /* Logger.swift */; };
 		22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D002C4D435C000E6E71 /* FriendsApp.swift */; };
 		22F56D052C4D435D000E6E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F56D042C4D435D000E6E71 /* Assets.xcassets */; };
 		22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */; };
@@ -31,6 +32,7 @@
 		2285BE4A2C54378B00BA5602 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		22CC25912C56EBE400240431 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		22F56CFD2C4D435C000E6E71 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F56D002C4D435C000E6E71 /* FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsApp.swift; sourceTree = "<group>"; };
 		22F56D042C4D435D000E6E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2285BE4A2C54378B00BA5602 /* Binding.swift */,
+				22CC25912C56EBE400240431 /* Logger.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */,
 				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
 				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
+				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
