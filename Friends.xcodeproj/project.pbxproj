@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */; };
+		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
 		225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */; };
 		225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */; };
 		2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* FriendsAppState.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
 		225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsNavigationView.swift; sourceTree = "<group>"; };
 		2285BE412C542B7A00BA5602 /* FriendsAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAppState.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			children = (
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
+				2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
 				22CC258E2C568B8D00240431 /* LocationService.swift */,
 			);
@@ -125,6 +130,7 @@
 				22F56D042C4D435D000E6E71 /* Assets.xcassets */,
 				22F56D002C4D435C000E6E71 /* FriendsApp.swift */,
 				2285BE412C542B7A00BA5602 /* FriendsAppState.swift */,
+				2208BA582C58E5A200AA94E8 /* Globals.swift */,
 				225405D22C55658400E9F5D0 /* Interfaces */,
 				2285BE492C54377B00BA5602 /* Extensions */,
 				2285BE432C542C9E00BA5602 /* Models */,
@@ -229,7 +235,9 @@
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
 				225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */,
+				2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
+				2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */,
 				2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */,
 				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
 				225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */,
