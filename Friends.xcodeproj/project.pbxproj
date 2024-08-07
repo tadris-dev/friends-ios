@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220140C82C63F3A80033807F /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140C72C63F3A60033807F /* Publisher.swift */; };
+		220140CA2C63F75F0033807F /* SessionManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140C92C63F7590033807F /* SessionManagement.swift */; };
+		220140CD2C63FA360033807F /* HashingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140CC2C63FA330033807F /* HashingHelper.swift */; };
 		2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */; };
 		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
 		225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220140C72C63F3A60033807F /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		220140C92C63F7590033807F /* SessionManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagement.swift; sourceTree = "<group>"; };
+		220140CC2C63FA330033807F /* HashingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashingHelper.swift; sourceTree = "<group>"; };
 		2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
@@ -59,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220140CB2C63F7880033807F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22CC258E2C568B8D00240431 /* LocationService.swift */,
+				220140C92C63F7590033807F /* SessionManagement.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		225405D22C55658400E9F5D0 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +87,11 @@
 		2285BE432C542C9E00BA5602 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2285BE4C2C54441500BA5602 /* Helpers */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
 				2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
-				22CC258E2C568B8D00240431 /* LocationService.swift */,
+				2285BE4C2C54441500BA5602 /* Helpers */,
+				220140CB2C63F7880033807F /* Services */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,6 +110,7 @@
 			children = (
 				2285BE4A2C54378B00BA5602 /* Binding.swift */,
 				22CC25912C56EBE400240431 /* Logger.swift */,
+				220140C72C63F3A60033807F /* Publisher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +118,7 @@
 		2285BE4C2C54441500BA5602 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				220140CC2C63FA330033807F /* HashingHelper.swift */,
 				2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */,
 			);
 			path = Helpers;
@@ -231,10 +248,13 @@
 				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
+				220140CD2C63FA360033807F /* HashingHelper.swift in Sources */,
+				220140CA2C63F75F0033807F /* SessionManagement.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
 				225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */,
+				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
 				2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
 				2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */,
