@@ -6,22 +6,23 @@ struct FriendImageView: View {
     private let friend: Friend
     private let selected: Bool
     private let action: (() -> Void)?
-    
-    private var size: CGFloat {
-        selected ? 42 : 36
+    private let size: Size
+    private var scaleSize: CGSize {
+        let value: CGFloat = selected ? 7/6 : 1
+        return CGSize(width: value, height: value)
     }
     
     private var image: some View {
         ZStack(alignment: .center) {
-            Circle().frame(width: 36, height: 36)
+            Circle().frame(width: size.circle, height: size.circle)
                 .foregroundStyle(.background)
-            Circle().frame(width: 36 - 4, height: 36 - 4)
+            Circle().frame(width: size.circle - 4, height: size.circle - 4)
                 .foregroundStyle(.tint)
             Text(friend.initial)
                 .foregroundStyle(.white)
-                .font(.callout.bold())
+                .font(size.font.bold())
         }
-        .scaleEffect(CGSize(width: size / 36, height: size / 36), anchor: .bottom)
+        .scaleEffect(scaleSize, anchor: .bottom)
         .animation(.bouncy, value: selected)
     }
     
@@ -35,10 +36,30 @@ struct FriendImageView: View {
         }
     }
     
-    init(friend: Friend, selected: Bool = false, action: (() -> Void)? = nil) {
+    init(friend: Friend, size: Size = .small, selected: Bool = false, action: (() -> Void)? = nil) {
         self.friend = friend
+        self.size = size
         self.selected = selected
         self.action = action
+    }
+    
+    enum Size {
+        case small
+        case large
+        
+        fileprivate var circle: CGFloat {
+            return switch self {
+            case .small: 32
+            case .large: 96
+            }
+        }
+        
+        fileprivate var font: Font {
+            return switch self {
+            case .small: .callout
+            case .large: .largeTitle
+            }
+        }
     }
 }
 

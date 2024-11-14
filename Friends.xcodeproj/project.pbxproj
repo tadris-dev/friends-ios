@@ -12,14 +12,22 @@
 		220140CD2C63FA360033807F /* HashingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140CC2C63FA330033807F /* HashingHelper.swift */; };
 		2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */; };
 		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
-		225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */; };
-		225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */; };
+		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
 		2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* FriendsAppState.swift */; };
 		2285BE452C542CDE00BA5602 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE442C542CDE00BA5602 /* Friend.swift */; };
-		2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE472C5431AB00BA5602 /* RootCoordinator.swift */; };
+		2285BE482C5431AB00BA5602 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE472C5431AB00BA5602 /* MainCoordinator.swift */; };
 		2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4A2C54378B00BA5602 /* Binding.swift */; };
 		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
+		228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B05DB2C9705EF00B45911 /* FriendDetailView.swift */; };
+		22957F4C2CE2607F00619B60 /* KeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4B2CE2607C00619B60 /* KeyStorage.swift */; };
+		22957F4E2CE26BDE00619B60 /* HandshakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4D2CE26BCA00619B60 /* HandshakeService.swift */; };
+		22957F502CE272CF00619B60 /* SharedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4F2CE272CA00619B60 /* SharedDataService.swift */; };
+		22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F512CE2748700619B60 /* SharedItemCategory.swift */; };
+		22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F532CE274ED00619B60 /* APIEndpoint.swift */; };
+		22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */; };
+		22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */; };
+		22A097342CE677B5001B1CB7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* Error.swift */; };
 		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
 		22CC25922C56EBE400240431 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC25912C56EBE400240431 /* Logger.swift */; };
 		22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D002C4D435C000E6E71 /* FriendsApp.swift */; };
@@ -35,14 +43,22 @@
 		220140CC2C63FA330033807F /* HashingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashingHelper.swift; sourceTree = "<group>"; };
 		2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
-		225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
-		225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsNavigationView.swift; sourceTree = "<group>"; };
+		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
 		2285BE412C542B7A00BA5602 /* FriendsAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAppState.swift; sourceTree = "<group>"; };
 		2285BE442C542CDE00BA5602 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		2285BE472C5431AB00BA5602 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2285BE472C5431AB00BA5602 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		2285BE4A2C54378B00BA5602 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		228B05DB2C9705EF00B45911 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+		22957F4B2CE2607C00619B60 /* KeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStorage.swift; sourceTree = "<group>"; };
+		22957F4D2CE26BCA00619B60 /* HandshakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandshakeService.swift; sourceTree = "<group>"; };
+		22957F4F2CE272CA00619B60 /* SharedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataService.swift; sourceTree = "<group>"; };
+		22957F512CE2748700619B60 /* SharedItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemCategory.swift; sourceTree = "<group>"; };
+		22957F532CE274ED00619B60 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
+		22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyUpdateService.swift; sourceTree = "<group>"; };
+		22A097332CE677B3001B1CB7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22CC25912C56EBE400240431 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -68,8 +84,12 @@
 		220140CB2C63F7880033807F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				22957F4D2CE26BCA00619B60 /* HandshakeService.swift */,
+				22957F4B2CE2607C00619B60 /* KeyStorage.swift */,
+				22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */,
 				22CC258E2C568B8D00240431 /* LocationService.swift */,
 				220140C92C63F7590033807F /* SessionManagement.swift */,
+				22957F4F2CE272CA00619B60 /* SharedDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -87,9 +107,13 @@
 		2285BE432C542C9E00BA5602 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				22957F532CE274ED00619B60 /* APIEndpoint.swift */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
+				22190D8C2CA74ACD00A65B44 /* Geocoding.swift */,
 				2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */,
+				22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
+				22957F512CE2748700619B60 /* SharedItemCategory.swift */,
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				220140CB2C63F7880033807F /* Services */,
 			);
@@ -99,8 +123,7 @@
 		2285BE462C54316E00BA5602 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				2285BE472C5431AB00BA5602 /* RootCoordinator.swift */,
-				225405CE2C55550800E9F5D0 /* SheetCoordinator.swift */,
+				2285BE472C5431AB00BA5602 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -109,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2285BE4A2C54378B00BA5602 /* Binding.swift */,
+				22A097332CE677B3001B1CB7 /* Error.swift */,
 				22CC25912C56EBE400240431 /* Logger.swift */,
 				220140C72C63F3A60033807F /* Publisher.swift */,
 			);
@@ -158,6 +182,7 @@
 		22F56D102C4D6F4C000E6E71 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				228B05DB2C9705EF00B45911 /* FriendDetailView.swift */,
 				22F56D182C4E630A000E6E71 /* FriendsListView.swift */,
 				22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */,
 			);
@@ -168,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
-				225405D02C5556E000E9F5D0 /* FriendsNavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,22 +269,30 @@
 				2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */,
 				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
 				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
+				22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */,
 				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
+				22A097342CE677B5001B1CB7 /* Error.swift in Sources */,
+				22957F502CE272CF00619B60 /* SharedDataService.swift in Sources */,
+				22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */,
+				228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */,
 				220140CD2C63FA360033807F /* HashingHelper.swift in Sources */,
 				220140CA2C63F75F0033807F /* SessionManagement.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
+				22957F4C2CE2607F00619B60 /* KeyStorage.swift in Sources */,
+				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
+				22957F4E2CE26BDE00619B60 /* HandshakeService.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
-				225405D12C5556E000E9F5D0 /* FriendsNavigationView.swift in Sources */,
+				22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */,
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
+				22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */,
 				2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
 				2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */,
-				2285BE482C5431AB00BA5602 /* RootCoordinator.swift in Sources */,
+				2285BE482C5431AB00BA5602 /* MainCoordinator.swift in Sources */,
 				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
-				225405CF2C55550800E9F5D0 /* SheetCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +439,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,6 +478,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

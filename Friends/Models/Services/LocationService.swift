@@ -86,15 +86,12 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         locationManager.startMonitoringSignificantLocationChanges()
         
-        // let backgroundSession = CLBackgroundActivitySession()
-        // let serviceSession = CLServiceSession(authorization: .always, fullAccuracyPurposeKey: <#T##String#>)
-        
-        // Task {
-        //     let monitor = await CLMonitor("monitor")
-        //     let coordinate = CLLocationCoordinate2D()
-        //     let condition = CLMonitor.CircularGeographicCondition(center: coordinate, radius: 100)
-        //     await monitor.add(condition, identifier: "current_location_change", assuming: .satisfied)
-        // }
+        Task {
+            let monitor = await CLMonitor("current_location_change_monitor")
+            let coordinate = CLLocationCoordinate2D()
+            let condition = CLMonitor.CircularGeographicCondition(center: coordinate, radius: 100)
+            await monitor.add(condition, identifier: "current_location_change", assuming: .satisfied)
+        }
     }
     
     // MARK: - CLLocationManagerDelegate

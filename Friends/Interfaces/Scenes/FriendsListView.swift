@@ -4,58 +4,64 @@ import CoreLocation
 struct FriendsListView: View {
     
     @EnvironmentObject private var appState: FriendsAppState
-    
     @Binding private var selectedFriend: Friend?
     @State private var placeForFriend: [Friend:String] = [:]
+    private let showProfileAction: () -> Void
+    private let showAddFriendAction: () -> Void
     
     var body: some View {
-        ForEach(appState.friends) { friend in
-            HStack {
-                FriendImageView(friend: friend)
-                Text(friend.name)
+        VStack {
+            HStack(spacing: 12) {
+                Text("Friends").font(.title.bold())
                 Spacer()
-                Text(placeForFriend[friend] ?? "").opacity(0.6)
-            }
-            .tag(friend)
-            .listRowBackground(Color.accentColor.opacity(selectedFriend == friend ? 0.25 : 0))
-            .animation(.bouncy, value: selectedFriend == friend)
-        }
-        .listStyle(.plain)
-        .onChange(of: appState.friends, initial: true) {
-            for friend in appState.friends {
-                getPlaceName(for: friend)
-            }
-        }
-    }
-    
-    init(selectedFriend: Binding<Friend?>) {
-        self._selectedFriend = selectedFriend
-    }
-    
-    func getPlaceName(for friend: Friend) {
-        let formatter = NumberFormatter()
-        formatter.maximumFractionDigits = 1
-        let lastLocation = CLLocationManager().location
-        let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(friend.location.clLocation, completionHandler: { placemarks, error in
-            if let error {
-                print("error occured for friend \(friend.name): \(error)")
-            } else {
-                var place = placemarks?.first?.locality ?? ""
-                if let lastLocation {
-                    let distance = formatter.string(for: lastLocation.distance(from: friend.location.clLocation) / 1000) ?? ""
-                    place += " (" + distance + " km)"
+                Button("add", systemImage: "plus", action: showAddFriendAction)
+                    .labelStyle(.iconOnly)
+                    .font(.title2)
+                Button(action: showProfileAction){
+                    FriendImageView(friend: Friend(name: "Me", location: .init(latitude: .zero, longitude: .zero)))
                 }
-                placeForFriend[friend] = place
-                print("found location for friend \(friend.name): \(place)")
             }
-        })
+            .padding([.top, .horizontal])
+            
+            List(selection: $selectedFriend) {
+                ForEach(appState.friends) { friend in
+                    HStack {
+                        FriendImageView(friend: friend)
+                        Text(friend.name)
+                        Spacer()
+                        Text(placeForFriend[friend] ?? "").opacity(0.6)
+                    }
+                    .tag(friend)
+                    .animation(.bouncy, value: selectedFriend == friend)
+                }
+                .listStyle(.plain)
+                .onChange(of: appState.friends, initial: true) {
+                    for friend in appState.friends {
+                        Task {
+                            var place = await friend.location.place
+                            // TODO: Fix
+                            if let currentLocation = appState.currentLocation {
+                                let distance = Geocoding.formattedDistance(from: friend.location, to: currentLocation)
+                                place += " (" + distance + ")"
+                            }
+                            placeForFriend[friend] = place
+                        }
+                    }
+                }
+                .listRowBackground(Color.clear)
+            }
+            .listStyle(.plain)
+        }
+        .background(.clear)
+    }
+    
+    init(
+        selectedFriend: Binding<Friend?>,
+        showProfileAction: @escaping () -> Void,
+        showAddFriendAction: @escaping () -> Void
+    ) {
+        self._selectedFriend = selectedFriend
+        self.showProfileAction = showProfileAction
+        self.showAddFriendAction = showAddFriendAction
     }
 }
-
-#if DEBUG
-#Preview {
-    FriendsListView(selectedFriend: .variable(nil))
-        .environmentObject(FriendsAppState.previewInstance)
-}
-#endif

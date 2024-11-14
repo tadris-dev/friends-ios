@@ -15,6 +15,12 @@ struct Location: Hashable {
         return .init(center: coordinate, span: span)
     }
     
+    var place: String {
+        get async {
+            (try? await Geocoding.placeName(for: self)) ?? "Unknown"
+        }
+    }
+    
     init(latitude: Double, longitude: Double) {
         self.latitude = latitude
         self.longitude = longitude
