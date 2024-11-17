@@ -13,9 +13,9 @@ class SharedDataService {
         return try await httpClient.sendRequest(to: .query(category))
     }
     
-    func update(category: SharedItemCategory, data: String) async throws {
+    func update(category: SharedItemCategory, data: Data) async throws {
         guard category.isShared else { throw Error.categoryNotUpdatable }
-        let params = SharedDataUpdateRequest(category: category.rawValue, data: data)
+        let params = SharedDataUpdateRequest(category: category.rawValue, data: data.base64EncodedString())
         try await httpClient.sendRequest(to: .update, parameters: params)
     }
     

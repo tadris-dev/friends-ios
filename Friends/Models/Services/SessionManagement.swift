@@ -13,8 +13,8 @@ class SessionManagement {
     }
     
     // TODO: Send actual public key
-    func register(with alias: String) async throws -> UUID {
-        let params = RegisterRequestParameters(aliasHash: HashingHelper.sha256(for: alias), publicKey: "123")
+    func register(with alias: String, publicKey: Data) async throws -> UUID {
+        let params = RegisterRequestParameters(aliasHash: HashingHelper.sha256(for: alias), publicKey: publicKey.base64EncodedString())
         let response: RegisterRequestResponse = try await httpClient.sendRequest(to: .user, parameters: params)
         guard let uuid = UUID(uuidString: response.uuid) else { throw SessionManagement.Error.processingFailed }
         self.alias = alias

@@ -43,32 +43,39 @@ struct ContentView: View {
         NavigationStack {
             List {
                 Section("Tests") {
+                    TestItem("Obtain Public Key", action: appState.obtainPublicKeyTest)
                     TestItem("Register", action: appState.registerTest)
                     TestItem("Login", action: appState.loginTest)
                     TestItem("Initiate Handshake", action: appState.initiateHandshakeTest)
                     TestItem("Accept Handshake", action: appState.acceptHandshakeTest)
+                    TestItem("Add Friend Public Key", action: appState.addFriendPublicKeyTest)
                     TestItem("Add Friend", action: appState.addFriendTest)
                     TestItem("Share Data", action: appState.shareDataTest)
                     TestItem("Query Data", action: appState.queryDataTest)
+                    TestItem("Decrypt Data", action: appState.decryptDataTest)
                 }
-                Section("Input / Results") {
-                    LabelledTextField("Alias", value: $appState.alias)
-                    LabelledText("UUID", value: appState.userID?.uuidString ?? "nil")
-                    LabelledTextField("Friend UUID", value: $appState.friendUUIDString)
-                    LabelledTextField("Shared Data", value: $appState.sharedData)
-                    // LabelledText("Public Key", value: appState.userID?.uuidString ?? "nil")
-                    // LabelledText("Private Key", value: appState.userID?.uuidString ?? "nil")
-                    // NavigationLink("Show Friend Map") {
-                    //     FriendsMapView(selectedFriend: .variable(nil))
-                    //         .navigationTitle("Map")
-                    // }
+                Section("User Data") {
+                    LabeledTextField("Alias", value: $appState.alias)
+                    LabeledText("UUID", value: appState.userID.uuidString)
+                    LabeledText("Public Key", value: appState.publicKey)
+                }
+                Section("Friend Data") {
+                    LabeledTextField("UUID", value: $appState.friendUUIDString)
+                    LabeledTextField("Public Key", value: $appState.friendPublicKey)
+                    LabeledText("Encrypted Session Key", value: appState.encryptedSessionKey)
+                }
+                Section("Results") {
+                    LabeledTextField("Data To Send", value: $appState.dataToSend)
+                    LabeledText("Data Received", value: appState.receivedData)
+                    LabeledText("Decrypted Data Received", value: appState.decryptedData)
+                    LabeledText("Session Key", value: appState.sessionKey)
                 }
             }
         }
     }
 }
 
-struct LabelledText: View {
+struct LabeledText: View {
     
     let label: String
     let value: String
@@ -91,7 +98,7 @@ struct LabelledText: View {
     }
 }
 
-struct LabelledTextField: View {
+struct LabeledTextField: View {
     
     let label: String
     @Binding var value: String
