@@ -32,6 +32,7 @@
 		22957F502CE272CF00619B60 /* SharedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4F2CE272CA00619B60 /* SharedDataService.swift */; };
 		22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F512CE2748700619B60 /* SharedItemCategory.swift */; };
 		22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F532CE274ED00619B60 /* APIEndpoint.swift */; };
+		2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DACC2D35135000694CC2 /* DebugTestView.swift */; };
 		22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */; };
 		22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */; };
 		22A097342CE677B5001B1CB7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* Error.swift */; };
@@ -70,6 +71,7 @@
 		22957F4F2CE272CA00619B60 /* SharedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataService.swift; sourceTree = "<group>"; };
 		22957F512CE2748700619B60 /* SharedItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemCategory.swift; sourceTree = "<group>"; };
 		22957F532CE274ED00619B60 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		2297DACC2D35135000694CC2 /* DebugTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTestView.swift; sourceTree = "<group>"; };
 		22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
 		22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyUpdateService.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2297DACB2D35133700694CC2 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2297DACC2D35135000694CC2 /* DebugTestView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		22F56CF42C4D435C000E6E71 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +221,7 @@
 		22F56D142C4D707F000E6E71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2297DACB2D35133700694CC2 /* Debug */,
 				223DEB972CEA617B00B6DDCD /* LabeledText.swift */,
 				223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */,
 				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
@@ -309,6 +320,7 @@
 				22957F4E2CE26BDE00619B60 /* HandshakeService.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
+				2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */,
 				22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */,
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
 				225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */,
