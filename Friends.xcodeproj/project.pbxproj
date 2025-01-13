@@ -36,8 +36,10 @@
 		22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */; };
 		22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */; };
 		22A097342CE677B5001B1CB7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* Error.swift */; };
+		22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */; };
 		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
 		22CC25922C56EBE400240431 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC25912C56EBE400240431 /* Logger.swift */; };
+		22E958282D0748DD00E296AC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E958272D0748DB00E296AC /* Session.swift */; };
 		22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D002C4D435C000E6E71 /* FriendsApp.swift */; };
 		22F56D052C4D435D000E6E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F56D042C4D435D000E6E71 /* Assets.xcassets */; };
 		22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */; };
@@ -78,7 +80,8 @@
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22CC25912C56EBE400240431 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		22F56CFD2C4D435C000E6E71 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E958272D0748DB00E296AC /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		22F56CFD2C4D435C000E6E71 /* friends-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "friends-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F56D002C4D435C000E6E71 /* FriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsApp.swift; sourceTree = "<group>"; };
 		22F56D042C4D435D000E6E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMapView.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,7 @@
 				22CC25912C56EBE400240431 /* Logger.swift */,
 				225492012CE8D4B900F014F5 /* OSStatus.swift */,
 				220140C72C63F3A60033807F /* Publisher.swift */,
+				22E958272D0748DB00E296AC /* Session.swift */,
 				2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */,
 			);
 			path = Extensions;
@@ -187,7 +192,7 @@
 		22F56CFE2C4D435C000E6E71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F56CFD2C4D435C000E6E71 /* Friends.app */,
+				22F56CFD2C4D435C000E6E71 /* friends-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,9 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				2297DACB2D35133700694CC2 /* Debug */,
+				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
 				223DEB972CEA617B00B6DDCD /* LabeledText.swift */,
 				223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */,
-				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,9 +237,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22F56CFC2C4D435C000E6E71 /* Friends */ = {
+		22F56CFC2C4D435C000E6E71 /* friends-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22F56D0B2C4D435D000E6E71 /* Build configuration list for PBXNativeTarget "Friends" */;
+			buildConfigurationList = 22F56D0B2C4D435D000E6E71 /* Build configuration list for PBXNativeTarget "friends-ios" */;
 			buildPhases = (
 				22F56CF92C4D435C000E6E71 /* Sources */,
 				22F56CFA2C4D435C000E6E71 /* Frameworks */,
@@ -244,9 +249,9 @@
 			);
 			dependencies = (
 			);
-			name = Friends;
+			name = "friends-ios";
 			productName = Friends;
-			productReference = 22F56CFD2C4D435C000E6E71 /* Friends.app */;
+			productReference = 22F56CFD2C4D435C000E6E71 /* friends-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +261,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					22F56CFC2C4D435C000E6E71 = {
@@ -273,11 +278,14 @@
 				Base,
 			);
 			mainGroup = 22F56CF42C4D435C000E6E71;
+			packageReferences = (
+				22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */,
+			);
 			productRefGroup = 22F56CFE2C4D435C000E6E71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22F56CFC2C4D435C000E6E71 /* Friends */,
+				22F56CFC2C4D435C000E6E71 /* friends-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -327,6 +335,7 @@
 				22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */,
 				2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
+				22E958282D0748DD00E296AC /* Session.swift in Sources */,
 				225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */,
 				222004962CE8BE39000FCFA5 /* ContiguousBytes.swift in Sources */,
 				2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */,
@@ -394,7 +403,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -453,7 +462,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -474,6 +483,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Friends/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Friends;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
@@ -517,6 +528,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Friends/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Friends;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Friends needs your location access to show it on maps and send it to your friends or family.";
@@ -560,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F56D0B2C4D435D000E6E71 /* Build configuration list for PBXNativeTarget "Friends" */ = {
+		22F56D0B2C4D435D000E6E71 /* Build configuration list for PBXNativeTarget "friends-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F56D0C2C4D435D000E6E71 /* Debug */,
@@ -570,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matrix-org/matrix-rust-components-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */;
+			productName = MatrixRustSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22F56CF52C4D435C000E6E71 /* Project object */;
 }
