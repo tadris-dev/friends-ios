@@ -31,7 +31,6 @@
 		22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F532CE274ED00619B60 /* APIEndpoint.swift */; };
 		2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DACC2D35135000694CC2 /* DebugTestView.swift */; };
 		22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */; };
-		22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */; };
 		22A097342CE677B5001B1CB7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* Error.swift */; };
 		22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */; };
 		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
@@ -69,7 +68,6 @@
 		22957F532CE274ED00619B60 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		2297DACC2D35135000694CC2 /* DebugTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTestView.swift; sourceTree = "<group>"; };
 		22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
-		22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyUpdateService.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				225491FF2CE8D33300F014F5 /* CryptoStore.swift */,
-				22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */,
 				22CC258E2C568B8D00240431 /* LocationService.swift */,
 				220140C92C63F7590033807F /* SessionManagement.swift */,
 				22957F4F2CE272CA00619B60 /* SharedDataService.swift */,
@@ -317,7 +314,6 @@
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
 				2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */,
-				22A097322CE66A45001B1CB7 /* KeyUpdateService.swift in Sources */,
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
 				225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */,
 				22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */,

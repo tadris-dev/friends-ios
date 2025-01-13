@@ -10,7 +10,6 @@ class FriendsAppState: ObservableObject {
     private let httpClient: HTTPClient
     private let sessionManagement: SessionManagement
     private let sharedDataService: SharedDataService
-    private let keyUpdateService: KeyUpdateService
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -31,7 +30,6 @@ class FriendsAppState: ObservableObject {
         self.httpClient = HTTPClient()
         self.sessionManagement = SessionManagement(httpClient: httpClient)
         self.sharedDataService = SharedDataService(httpClient: httpClient)
-        self.keyUpdateService = KeyUpdateService(httpClient: httpClient)
         
         Task {
             do {
