@@ -26,7 +26,6 @@
 		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
 		228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B05DB2C9705EF00B45911 /* FriendDetailView.swift */; };
-		22957F4C2CE2607F00619B60 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4B2CE2607C00619B60 /* CryptoService.swift */; };
 		22957F4E2CE26BDE00619B60 /* HandshakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4D2CE26BCA00619B60 /* HandshakeService.swift */; };
 		22957F502CE272CF00619B60 /* SharedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F4F2CE272CA00619B60 /* SharedDataService.swift */; };
 		22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F512CE2748700619B60 /* SharedItemCategory.swift */; };
@@ -66,7 +65,6 @@
 		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		228B05DB2C9705EF00B45911 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
-		22957F4B2CE2607C00619B60 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		22957F4D2CE26BCA00619B60 /* HandshakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandshakeService.swift; sourceTree = "<group>"; };
 		22957F4F2CE272CA00619B60 /* SharedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataService.swift; sourceTree = "<group>"; };
 		22957F512CE2748700619B60 /* SharedItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemCategory.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				22957F4D2CE26BCA00619B60 /* HandshakeService.swift */,
-				22957F4B2CE2607C00619B60 /* CryptoService.swift */,
 				225491FF2CE8D33300F014F5 /* CryptoStore.swift */,
 				22A097312CE66A34001B1CB7 /* KeyUpdateService.swift */,
 				22CC258E2C568B8D00240431 /* LocationService.swift */,
@@ -319,7 +316,6 @@
 				220140CD2C63FA360033807F /* HashingHelper.swift in Sources */,
 				220140CA2C63F75F0033807F /* SessionManagement.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
-				22957F4C2CE2607F00619B60 /* CryptoService.swift in Sources */,
 				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
 				22957F4E2CE26BDE00619B60 /* HandshakeService.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,

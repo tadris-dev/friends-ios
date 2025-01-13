@@ -12,7 +12,6 @@ class FriendsAppState: ObservableObject {
     private let sharedDataService: SharedDataService
     private let handshakeService: HandshakeService
     private let keyUpdateService: KeyUpdateService
-    private let cryptoService: CryptoService
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -35,7 +34,6 @@ class FriendsAppState: ObservableObject {
         self.sharedDataService = SharedDataService(httpClient: httpClient)
         self.handshakeService = HandshakeService(httpClient: httpClient, sharedDataService: sharedDataService)
         self.keyUpdateService = KeyUpdateService(httpClient: httpClient)
-        self.cryptoService = CryptoService(uuid: userID)
         
         Task {
             do {
