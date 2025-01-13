@@ -41,7 +41,7 @@ class CryptoService {
             let attributes = [
                 kSecAttrKeyClass: kSecAttrKeyClassPublic,
                 kSecAttrKeyType: kSecAttrKeyTypeRSA,
-                kSecAttrKeySizeInBits: 2048,
+                kSecAttrKeySizeInBits: Self.rsaKeyLength,
             ] as CFDictionary
             let publicKey = try Self.secKey(from: keyData, attributes: attributes)
             try cryptoStore.storeKey(publicKey, label: label)
@@ -55,7 +55,7 @@ class CryptoService {
             guard let publicKey = try obtainFriendPublicKey(for: friendUUID) else { throw CryptoServiceError.publicKeyNotFound }
             let sessionKey = try obtainSessionKey()
             var error: Unmanaged<CFError>?
-            let sessionKeyData = SecKeyCreateEncryptedData(publicKey, .rsaEncryptionPKCS1, sessionKey.rawRepresentation as CFData, &error)
+            let sessionKeyData = SecKeyCreateEncryptedData(publicKey, Self.rsaAlgorithm, sessionKey.rawRepresentation as CFData, &error)
             guard let sessionKeyData else { throw Self.determineCFError(error) }
             return sessionKeyData as Data
         }
@@ -116,7 +116,7 @@ class CryptoService {
     private func decryptSessionKey(_ keyData: Data, friendUUID: UUID) throws -> SymmetricKey {
         let privateKey = try obtainPrivateKey()
         var error: Unmanaged<CFError>?
-        let sessionKeyData = SecKeyCreateDecryptedData(privateKey, .rsaEncryptionPKCS1, keyData as CFData, &error)
+        let sessionKeyData = SecKeyCreateDecryptedData(privateKey, Self.rsaAlgorithm, keyData as CFData, &error)
         guard let sessionKeyData else { throw Self.determineCFError(error) }
         return try SymmetricKey(rawRepresentation: sessionKeyData as Data)
     }
@@ -125,7 +125,7 @@ class CryptoService {
     private static func createRandomRSAKey() throws -> SecKey {
         let attributes = [
             kSecAttrKeyType: kSecAttrKeyTypeRSA,
-            kSecAttrKeySizeInBits: 2048,
+            kSecAttrKeySizeInBits: rsaKeyLength,
         ] as CFDictionary
         var error: Unmanaged<CFError>?
         guard let privateKey = SecKeyCreateRandomKey(attributes, &error) else { throw Self.determineCFError(error) }
@@ -150,6 +150,11 @@ class CryptoService {
         guard let secKey = SecKeyCreateWithData(data as CFData, attributes, &error) else { throw determineCFError(error) }
         return secKey
     }
+    
+    // MARK: Static Values
+    
+    private static let rsaKeyLength = 4096
+    private static let rsaAlgorithm = SecKeyAlgorithm.rsaEncryptionPKCS1
     
     // MARK: Key Tags
     
