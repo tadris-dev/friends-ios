@@ -15,7 +15,6 @@
 		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
 		222004962CE8BE39000FCFA5 /* ContiguousBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222004952CE8BE39000FCFA5 /* ContiguousBytes.swift */; };
 		2220049C2CE8BFBC000FCFA5 /* SymmetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */; };
-		223DEB942CEA5F0500B6DDCD /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB932CEA5F0000B6DDCD /* DebugView.swift */; };
 		223DEB962CEA5F2800B6DDCD /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */; };
 		223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB972CEA617B00B6DDCD /* LabeledText.swift */; };
 		225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225491FF2CE8D33300F014F5 /* CryptoStore.swift */; };
@@ -56,7 +55,6 @@
 		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
 		222004952CE8BE39000FCFA5 /* ContiguousBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContiguousBytes.swift; sourceTree = "<group>"; };
 		2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricKey.swift; sourceTree = "<group>"; };
-		223DEB932CEA5F0000B6DDCD /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
 		223DEB972CEA617B00B6DDCD /* LabeledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledText.swift; sourceTree = "<group>"; };
 		225491FF2CE8D33300F014F5 /* CryptoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStore.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 		22F56D102C4D6F4C000E6E71 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				223DEB932CEA5F0000B6DDCD /* DebugView.swift */,
 				228B05DB2C9705EF00B45911 /* FriendDetailView.swift */,
 				22F56D182C4E630A000E6E71 /* FriendsListView.swift */,
 				22F56D0E2C4D6F13000E6E71 /* FriendsMapView.swift */,
@@ -310,7 +307,6 @@
 				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
 				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
 				22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */,
-				223DEB942CEA5F0500B6DDCD /* DebugView.swift in Sources */,
 				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
