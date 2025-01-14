@@ -8,7 +8,6 @@ class FriendsAppState: ObservableObject {
     
     private let locationService: LocationService
     private let httpClient: HTTPClient
-    private let sharedDataService: SharedDataService
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -27,7 +26,6 @@ class FriendsAppState: ObservableObject {
         // self.userID = userID
         self.locationService = LocationService()
         self.httpClient = HTTPClient()
-        self.sharedDataService = SharedDataService(httpClient: httpClient)
         
         Task {
             do {
