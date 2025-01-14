@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		220140C82C63F3A80033807F /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140C72C63F3A60033807F /* Publisher.swift */; };
-		220140CD2C63FA360033807F /* HashingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140CC2C63FA330033807F /* HashingHelper.swift */; };
 		2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */; };
 		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
 		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
@@ -43,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		220140C72C63F3A60033807F /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
-		220140CC2C63FA330033807F /* HashingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashingHelper.swift; sourceTree = "<group>"; };
 		2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		2285BE4C2C54441500BA5602 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				220140CC2C63FA330033807F /* HashingHelper.swift */,
 				2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */,
 			);
 			path = Helpers;
@@ -300,7 +297,6 @@
 				2220049C2CE8BFBC000FCFA5 /* SymmetricKey.swift in Sources */,
 				22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */,
 				228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */,
-				220140CD2C63FA360033807F /* HashingHelper.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
 				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */,
