@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		220140C82C63F3A80033807F /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140C72C63F3A60033807F /* Publisher.swift */; };
-		2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */; };
 		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
 		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
 		222004962CE8BE39000FCFA5 /* ContiguousBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222004952CE8BE39000FCFA5 /* ContiguousBytes.swift */; };
@@ -25,9 +24,7 @@
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
 		228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B05DB2C9705EF00B45911 /* FriendDetailView.swift */; };
 		22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F512CE2748700619B60 /* SharedItemCategory.swift */; };
-		22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F532CE274ED00619B60 /* APIEndpoint.swift */; };
 		2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DACC2D35135000694CC2 /* DebugTestView.swift */; };
-		22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */; };
 		22A097342CE677B5001B1CB7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* Error.swift */; };
 		22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */; };
 		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
@@ -42,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		220140C72C63F3A60033807F /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
-		2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
 		222004952CE8BE39000FCFA5 /* ContiguousBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContiguousBytes.swift; sourceTree = "<group>"; };
@@ -59,9 +55,7 @@
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		228B05DB2C9705EF00B45911 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		22957F512CE2748700619B60 /* SharedItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemCategory.swift; sourceTree = "<group>"; };
-		22957F532CE274ED00619B60 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		2297DACC2D35135000694CC2 /* DebugTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTestView.swift; sourceTree = "<group>"; };
-		22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -109,11 +103,8 @@
 		2285BE432C542C9E00BA5602 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				22957F532CE274ED00619B60 /* APIEndpoint.swift */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
 				22190D8C2CA74ACD00A65B44 /* Geocoding.swift */,
-				2208BA562C58E2DD00AA94E8 /* HTTPClient.swift */,
-				22A0972F2CE66526001B1CB7 /* HTTPRequestMethod.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
 				22957F512CE2748700619B60 /* SharedItemCategory.swift */,
 				2285BE4C2C54441500BA5602 /* Helpers */,
@@ -258,7 +249,7 @@
 			);
 			mainGroup = 22F56CF42C4D435C000E6E71;
 			packageReferences = (
-				22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */,
+				2297DACE2D370BAC00694CC2 /* XCLocalSwiftPackageReference "../matrix-rust-components-swift" */,
 			);
 			productRefGroup = 22F56CFE2C4D435C000E6E71 /* Products */;
 			projectDirPath = "";
@@ -288,14 +279,12 @@
 				2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */,
 				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
 				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
-				22A097302CE66526001B1CB7 /* HTTPRequestMethod.swift in Sources */,
 				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
 				223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */,
 				22A097342CE677B5001B1CB7 /* Error.swift in Sources */,
 				2220049C2CE8BFBC000FCFA5 /* SymmetricKey.swift in Sources */,
-				22957F542CE274F000619B60 /* APIEndpoint.swift in Sources */,
 				228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
 				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
@@ -305,7 +294,6 @@
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
 				225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */,
 				22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */,
-				2208BA572C58E2ED00AA94E8 /* HTTPClient.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
 				22E958282D0748DD00E296AC /* Session.swift in Sources */,
 				225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */,

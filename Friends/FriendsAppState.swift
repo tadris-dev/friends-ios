@@ -7,7 +7,6 @@ import OSLog
 class FriendsAppState: ObservableObject {
     
     private let locationService: LocationService
-    private let httpClient: HTTPClient
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -25,7 +24,6 @@ class FriendsAppState: ObservableObject {
         }
         // self.userID = userID
         self.locationService = LocationService()
-        self.httpClient = HTTPClient()
         
         Task {
             do {
