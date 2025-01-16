@@ -1,7 +1,7 @@
 import CoreLocation
 import MapKit
 
-class Geocoding {
+enum Geocoding {
     
     static func placeName(for location: Location) async throws -> String {
         return try await withCheckedThrowingContinuation { continuation in

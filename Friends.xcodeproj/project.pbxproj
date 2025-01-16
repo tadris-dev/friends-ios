@@ -98,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
-				22190D8C2CA74ACD00A65B44 /* Geocoding.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				220140CB2C63F7880033807F /* Services */,
@@ -130,6 +129,7 @@
 		2285BE4C2C54441500BA5602 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				22190D8C2CA74ACD00A65B44 /* Geocoding.swift */,
 				2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */,
 			);
 			path = Helpers;
