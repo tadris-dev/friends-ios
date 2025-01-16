@@ -10,7 +10,6 @@
 		220140C82C63F3A80033807F /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220140C72C63F3A60033807F /* Publisher.swift */; };
 		2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BA582C58E5A200AA94E8 /* Globals.swift */; };
 		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
-		2220049C2CE8BFBC000FCFA5 /* SymmetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */; };
 		223DEB962CEA5F2800B6DDCD /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */; };
 		223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB972CEA617B00B6DDCD /* LabeledText.swift */; };
 		225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225491FF2CE8D33300F014F5 /* CryptoStore.swift */; };
@@ -22,7 +21,6 @@
 		2285BE4E2C54443200BA5602 /* WindowHeightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */; };
 		2285BE502C544AE700BA5602 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE4F2C544AE700BA5602 /* Location.swift */; };
 		228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B05DB2C9705EF00B45911 /* FriendDetailView.swift */; };
-		22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22957F512CE2748700619B60 /* SharedItemCategory.swift */; };
 		2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DACC2D35135000694CC2 /* DebugTestView.swift */; };
 		22A097342CE677B5001B1CB7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* String.swift */; };
 		22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */; };
@@ -40,7 +38,6 @@
 		220140C72C63F3A60033807F /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		2208BA582C58E5A200AA94E8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
-		2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricKey.swift; sourceTree = "<group>"; };
 		223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
 		223DEB972CEA617B00B6DDCD /* LabeledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledText.swift; sourceTree = "<group>"; };
 		225491FF2CE8D33300F014F5 /* CryptoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStore.swift; sourceTree = "<group>"; };
@@ -52,7 +49,6 @@
 		2285BE4D2C54443200BA5602 /* WindowHeightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHeightHelper.swift; sourceTree = "<group>"; };
 		2285BE4F2C544AE700BA5602 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		228B05DB2C9705EF00B45911 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
-		22957F512CE2748700619B60 /* SharedItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemCategory.swift; sourceTree = "<group>"; };
 		2297DACC2D35135000694CC2 /* DebugTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTestView.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -104,7 +100,6 @@
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
 				22190D8C2CA74ACD00A65B44 /* Geocoding.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
-				22957F512CE2748700619B60 /* SharedItemCategory.swift */,
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				220140CB2C63F7880033807F /* Services */,
 			);
@@ -128,7 +123,6 @@
 				220140C72C63F3A60033807F /* Publisher.swift */,
 				22E958272D0748DB00E296AC /* Session.swift */,
 				22A097332CE677B3001B1CB7 /* String.swift */,
-				2220049B2CE8BFBC000FCFA5 /* SymmetricKey.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,7 +275,6 @@
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
 				223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */,
 				22A097342CE677B5001B1CB7 /* String.swift in Sources */,
-				2220049C2CE8BFBC000FCFA5 /* SymmetricKey.swift in Sources */,
 				228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */,
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
 				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
@@ -290,7 +283,6 @@
 				2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */,
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
 				225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */,
-				22957F522CE2748A00619B60 /* SharedItemCategory.swift in Sources */,
 				22CC258F2C568B9200240431 /* LocationService.swift in Sources */,
 				22E958282D0748DD00E296AC /* Session.swift in Sources */,
 				225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */,
