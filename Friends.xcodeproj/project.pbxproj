@@ -69,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */,
+				2297DAE52D3BC1F700694CC2 /* MatrixRustSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +241,7 @@
 			);
 			mainGroup = 22F56CF42C4D435C000E6E71;
 			packageReferences = (
-				2297DACE2D370BAC00694CC2 /* XCLocalSwiftPackageReference "../matrix-rust-components-swift" */,
+				2297DAE32D3BC1F700694CC2 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */,
 			);
 			productRefGroup = 22F56CFE2C4D435C000E6E71 /* Products */;
 			projectDirPath = "";
@@ -533,6 +534,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2297DAE32D3BC1F700694CC2 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matrix-org/matrix-rust-components-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.12.20;
+			};
+		};
 		22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/matrix-org/matrix-rust-components-swift";
@@ -544,6 +553,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2297DAE42D3BC1F700694CC2 /* MatrixRustSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2297DAE32D3BC1F700694CC2 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */;
+			productName = MatrixRustSDK;
+		};
 		22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22A1E02E2CF4CB7400688E90 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */;
