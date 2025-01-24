@@ -24,6 +24,7 @@
 		2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DACC2D35135000694CC2 /* DebugTestView.swift */; };
 		2297DAD32D3AC0A900694CC2 /* RoomListServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD22D3AC0A400694CC2 /* RoomListServiceHandler.swift */; };
 		2297DAD52D3AC24C00694CC2 /* SlidingSyncVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD42D3AC24700694CC2 /* SlidingSyncVersion.swift */; };
+		2297DAD72D3ACB2300694CC2 /* SyncServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD62D3ACB2300694CC2 /* SyncServiceHandler.swift */; };
 		22A097342CE677B5001B1CB7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A097332CE677B3001B1CB7 /* String.swift */; };
 		22A1E0302CF4CB7400688E90 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 22A1E02F2CF4CB7400688E90 /* MatrixRustSDK */; };
 		22CC258F2C568B9200240431 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC258E2C568B8D00240431 /* LocationService.swift */; };
@@ -54,6 +55,7 @@
 		2297DACC2D35135000694CC2 /* DebugTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTestView.swift; sourceTree = "<group>"; };
 		2297DAD22D3AC0A400694CC2 /* RoomListServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListServiceHandler.swift; sourceTree = "<group>"; };
 		2297DAD42D3AC24700694CC2 /* SlidingSyncVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingSyncVersion.swift; sourceTree = "<group>"; };
+		2297DAD62D3ACB2300694CC2 /* SyncServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncServiceHandler.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		22CC258E2C568B8D00240431 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		22CC25902C568F6600240431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				2297DAD22D3AC0A400694CC2 /* RoomListServiceHandler.swift */,
+				2297DAD62D3ACB2300694CC2 /* SyncServiceHandler.swift */,
 			);
 			path = Matrix;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				2285BE482C5431AB00BA5602 /* MainCoordinator.swift in Sources */,
 				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
 				223DEB962CEA5F2800B6DDCD /* LabeledTextField.swift in Sources */,
+				2297DAD72D3ACB2300694CC2 /* SyncServiceHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
