@@ -2,10 +2,9 @@ import Combine
 import CoreLocation
 import OSLog
 
-fileprivate let logger = Logger(category: "LocationService")
-
-class LocationService: NSObject, CLLocationManagerDelegate {
+class LocationService: NSObject, CLLocationManagerDelegate, ObservableObject {
     
+    private let logger = Logger(category: "LocationService")
     private let locationManager = CLLocationManager()
     
     private let authorizationStatusSubject = CurrentValueSubject<AuthorizationStatus, Never>(.initializing)
@@ -97,7 +96,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     // MARK: - CLLocationManagerDelegate
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        logger.info("received location")
+        // logger.info("received location")
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Swift.Error) {

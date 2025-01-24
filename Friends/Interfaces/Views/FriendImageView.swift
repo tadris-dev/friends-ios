@@ -62,9 +62,3 @@ struct FriendImageView: View {
         }
     }
 }
-
-#if DEBUG
-#Preview {
-    FriendImageView(friend: Friend.exampleFriends.first!, selected: false, action: {})
-}
-#endif

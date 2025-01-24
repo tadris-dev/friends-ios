@@ -3,7 +3,7 @@ import SwiftUI
 
 struct FriendsMapView: View {
     
-    @EnvironmentObject private var appState: FriendsAppState
+    @EnvironmentObject private var friendService: FriendService
     
     @Binding private var selectedFriend: Friend?
     @State private var position: MapCameraPosition = .automatic
@@ -11,14 +11,16 @@ struct FriendsMapView: View {
     var body: some View {
         Map(position: $position, selection: $selectedFriend) {
             UserAnnotation()
-            ForEach(appState.friends) { friend in
-                Annotation(coordinate: friend.location.coordinate) {
-                    FriendImageView(friend: friend, selected: selectedFriend == friend)
-                        .padding(-4)
-                } label: {
-                    Text(friend.name)
+            ForEach(friendService.friends) { friend in
+                if let location = friend.location {
+                    Annotation(coordinate: location.coordinate) {
+                        FriendImageView(friend: friend, selected: selectedFriend == friend)
+                            .padding(-4)
+                    } label: {
+                        Text(friend.name)
+                    }
+                    .tag(friend)
                 }
-                .tag(friend)
             }
         }
         .mapControlVisibility(.visible)
@@ -27,8 +29,8 @@ struct FriendsMapView: View {
             MapPitchToggle()
             MapUserLocationButton()
         }.onChange(of: selectedFriend) {
-            position = if let selectedFriend {
-                .region(selectedFriend.location.region)
+            position = if let selectedFriend, let location = selectedFriend.location {
+                .region(location.region)
             } else {
                 .automatic
             }

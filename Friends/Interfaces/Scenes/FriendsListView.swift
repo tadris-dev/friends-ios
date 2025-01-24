@@ -3,9 +3,11 @@ import CoreLocation
 
 struct FriendsListView: View {
     
-    @EnvironmentObject private var appState: FriendsAppState
+    @EnvironmentObject private var friendService: FriendService
+    @EnvironmentObject private var locationService: LocationService
+    
     @Binding private var selectedFriend: Friend?
-    @State private var placeForFriend: [Friend:String] = [:]
+    @State private var placeForFriendId: [String:String] = [:]
     private let showProfileAction: () -> Void
     private let showAddFriendAction: () -> Void
     
@@ -17,38 +19,58 @@ struct FriendsListView: View {
                 Button("add", systemImage: "plus", action: showAddFriendAction)
                     .labelStyle(.iconOnly)
                     .font(.title2)
-                Button(action: showProfileAction){
-                    FriendImageView(friend: Friend(name: "Me", location: .init(latitude: .zero, longitude: .zero)))
+                Button(action: showProfileAction) {
+                    // TODO: Replace with user image
+                    Image(systemName: "person.crop.circle")
+                        .font(.title)
                 }
             }
-            .padding([.top, .horizontal])
+            .padding(.horizontal)
+            .padding(.top, 24)
             
             List(selection: $selectedFriend) {
-                ForEach(appState.friends) { friend in
+                ForEach(friendService.friends) { friend in
                     HStack {
                         FriendImageView(friend: friend)
                         Text(friend.name)
                         Spacer()
-                        Text(placeForFriend[friend] ?? "").opacity(0.6)
+                        Text(placeForFriendId[friend.userId] ?? "").opacity(0.6)
                     }
                     .tag(friend)
                     .animation(.bouncy, value: selectedFriend == friend)
                 }
                 .listStyle(.plain)
-                .onChange(of: appState.friends, initial: true) {
-                    for friend in appState.friends {
+                .onChange(of: friendService.friends, initial: true) {
+                    for friend in friendService.friends {
                         Task {
-                            var place = await friend.location.place
+                            guard let location = friend.location else { return }
+                            var place = await location.place
                             // TODO: Fix
-                            if let currentLocation = appState.currentLocation {
-                                let distance = Geocoding.formattedDistance(from: friend.location, to: currentLocation)
+                            if let currentLocation = locationService.currentLocation {
+                                let distance = Geocoding.formattedDistance(from: location, to: currentLocation)
                                 place += " (" + distance + ")"
                             }
-                            placeForFriend[friend] = place
+                            placeForFriendId[friend.userId] = place
                         }
                     }
                 }
                 .listRowBackground(Color.clear)
+                
+                Section("Friend Requests") {
+                    ForEach(friendService.receivedFriendRequests) { request in
+                        HStack {
+                            Text(request.name)
+                        }
+                    }
+                }
+                
+                Section("Sent Requests") {
+                    ForEach(friendService.sentFriendRequests) { request in
+                        HStack {
+                            Text(request.name)
+                        }
+                    }
+                }
             }
             .listStyle(.plain)
         }

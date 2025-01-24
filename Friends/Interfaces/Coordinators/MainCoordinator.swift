@@ -4,7 +4,7 @@ import SwiftUI
 
 struct MainCoordinator: View {
     
-    @EnvironmentObject private var appState: FriendsAppState
+    @EnvironmentObject private var sessionManagement: SessionManagement
     
     @State private var sheetState: SheetState
     @State private var sheetSize: SheetSize
@@ -24,36 +24,41 @@ struct MainCoordinator: View {
     var body: some View {
         FriendsMapView(selectedFriend: selectedFriend)
             .safeAreaPadding(.bottom, SheetSize.small.height)
-            .sheet(item: sheetStateBinding) { state in
-                Group {
-                    switch state {
-                    case .main:
-                        FriendsListView(
-                            selectedFriend: selectedFriend,
-                            showProfileAction: { sheetState = .profile },
-                            showAddFriendAction: { sheetState = .addFriend }
-                        )
-                        .presentationDetents(sheetDetents, selection: sheetDetentBinding)
-                        .interactiveDismissDisabled()
-                        
-                    case .friendDetail(let friend):
-                        FriendDetailView(friend: friend)
-                            .padding([.horizontal, .top])
-                            .presentationDetents(Set([SheetSize.medium, .fullScreen].map { $0.detent }))
-                    default:
-                        Text("Not implemented")
-                            .presentationDetents(Set([SheetSize.small.detent]))
-                    }
-                }
-                .presentationBackgroundInteraction(.enabled(upThrough: SheetSize.medium.detent))
-                .presentationBackground(Material.regular)
-            }
+            .sheet(item: sheetStateBinding, content: sheet)
     }
     
     init() {
         self.sheetState = .main
         self.sheetSize = .medium
         self.sheetDetents = Set(SheetSize.allCases.map { $0.detent })
+    }
+    
+    func sheet(for state: SheetState) -> some View {
+        Group {
+            switch state {
+            case .main:
+                FriendsListView(
+                    selectedFriend: selectedFriend,
+                    showProfileAction: { sheetState = .profile },
+                    showAddFriendAction: { sheetState = .addFriend }
+                )
+                .presentationDetents(sheetDetents, selection: sheetDetentBinding)
+                .interactiveDismissDisabled()
+            case .addFriend:
+                AddFriendScene()
+            case .friendDetail(let friend):
+                FriendDetailView(friend: friend)
+                    .padding([.horizontal, .top])
+                    .presentationDetents(Set([SheetSize.medium, .fullScreen].map { $0.detent }))
+            case .profile:
+                SettingsScene()
+            default:
+                Text("Not implemented")
+                    .presentationDetents(Set([SheetSize.small.detent]))
+            }
+        }
+        .presentationBackgroundInteraction(.enabled(upThrough: SheetSize.medium.detent))
+        .presentationBackground(Material.regular)
     }
     
     // MARK: - Types
@@ -103,10 +108,3 @@ struct MainCoordinator: View {
         }
     }
 }
-
-#if DEBUG
-#Preview {
-    MainCoordinator()
-        .environmentObject(FriendsAppState.previewInstance)
-}
-#endif

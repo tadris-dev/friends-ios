@@ -85,7 +85,7 @@ struct FriendLocationLabel: View {
     
     private func fetchPlace() {
         Task {
-            self.place = await friend.location.place
+            self.place = await friend.location?.place ?? ""
         }
     }
 }
@@ -99,8 +99,4 @@ struct CardButtonStyle: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.95 : 1)
             .animation(.default, value: configuration.isPressed)
     }
-}
-
-#Preview {
-    FriendDetailView(friend: FriendsAppState.previewInstance.friends.first!)
 }
