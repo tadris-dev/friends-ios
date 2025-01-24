@@ -20,6 +20,10 @@
 		225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225492012CE8D4B900F014F5 /* OSStatus.swift */; };
 		22768A432D44070B0079D0CB /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 22768A422D44070B0079D0CB /* RswiftLibrary */; };
 		22768A452D44070B0079D0CB /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 22768A442D44070B0079D0CB /* rswift */; };
+		22768AA32D441CC70079D0CB /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AA22D441CC50079D0CB /* RadarView.swift */; };
+		22768AAD2D441CF90079D0CB /* RadarRadiusLinesMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AAB2D441CF20079D0CB /* RadarRadiusLinesMask.swift */; };
+		22768ABA2D4420840079D0CB /* RadarSweepLineMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AB92D4420840079D0CB /* RadarSweepLineMask.swift */; };
+		22768AC02D4420B60079D0CB /* LocationPuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768ABF2D4420B60079D0CB /* LocationPuck.swift */; };
 		2285BE422C542B7A00BA5602 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* AppState.swift */; };
 		2285BE452C542CDE00BA5602 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE442C542CDE00BA5602 /* Friend.swift */; };
 		2285BE482C5431AB00BA5602 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE472C5431AB00BA5602 /* MainCoordinator.swift */; };
@@ -66,6 +70,10 @@
 		224401B72D41AE1F00CB982C /* SettingsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
 		225491FF2CE8D33300F014F5 /* CryptoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStore.swift; sourceTree = "<group>"; };
 		225492012CE8D4B900F014F5 /* OSStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSStatus.swift; sourceTree = "<group>"; };
+		22768AA22D441CC50079D0CB /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		22768AAB2D441CF20079D0CB /* RadarRadiusLinesMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarRadiusLinesMask.swift; sourceTree = "<group>"; };
+		22768AB92D4420840079D0CB /* RadarSweepLineMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSweepLineMask.swift; sourceTree = "<group>"; };
+		22768ABF2D4420B60079D0CB /* LocationPuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPuck.swift; sourceTree = "<group>"; };
 		2285BE412C542B7A00BA5602 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2285BE442C542CDE00BA5602 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		2285BE472C5431AB00BA5602 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -136,6 +144,16 @@
 				22F56D142C4D707F000E6E71 /* Views */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		22768A9E2D441C9F0079D0CB /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				22768AAB2D441CF20079D0CB /* RadarRadiusLinesMask.swift */,
+				22768AB92D4420840079D0CB /* RadarSweepLineMask.swift */,
+				22768AA22D441CC50079D0CB /* RadarView.swift */,
+			);
+			path = Radar;
 			sourceTree = "<group>";
 		};
 		2285BE432C542C9E00BA5602 /* Models */ = {
@@ -260,10 +278,12 @@
 		22F56D142C4D707F000E6E71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2297DACB2D35133700694CC2 /* Debug */,
 				22F56D162C4D70A6000E6E71 /* FriendImageView.swift */,
 				223DEB972CEA617B00B6DDCD /* LabeledText.swift */,
 				223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */,
+				22768ABF2D4420B60079D0CB /* LocationPuck.swift */,
+				22768A9E2D441C9F0079D0CB /* Radar */,
+				2297DACB2D35133700694CC2 /* Debug */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +371,7 @@
 				224401B12D41664200CB982C /* FriendService.swift in Sources */,
 				2297DAF62D40463400694CC2 /* View.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
+				22768AC02D4420B60079D0CB /* LocationPuck.swift in Sources */,
 				2297DAEB2D3D164500694CC2 /* SetupCoordinator.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
 				2297DAD32D3AC0A900694CC2 /* RoomListServiceHandler.swift in Sources */,
@@ -374,13 +395,16 @@
 				2297DAD02D3AB6C500694CC2 /* MatrixClient.swift in Sources */,
 				2297DADF2D3BA0CE00694CC2 /* RootCoordinator.swift in Sources */,
 				22E958282D0748DD00E296AC /* Session.swift in Sources */,
+				22768ABA2D4420840079D0CB /* RadarSweepLineMask.swift in Sources */,
 				225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */,
 				2297DAF12D40447D00694CC2 /* LoginScene.swift in Sources */,
 				2208BA592C58E5A500AA94E8 /* Globals.swift in Sources */,
 				2285BE482C5431AB00BA5602 /* MainCoordinator.swift in Sources */,
+				22768AA32D441CC70079D0CB /* RadarView.swift in Sources */,
 				2285BE452C542CDE00BA5602 /* Friend.swift in Sources */,
 				223DEB962CEA5F2800B6DDCD /* LabeledTextField.swift in Sources */,
 				2297DAD72D3ACB2300694CC2 /* SyncServiceHandler.swift in Sources */,
+				22768AAD2D441CF90079D0CB /* RadarRadiusLinesMask.swift in Sources */,
 				224401B62D41ABC000CB982C /* AddFriendScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
