@@ -12,6 +12,8 @@
 		22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22190D8C2CA74ACD00A65B44 /* Geocoding.swift */; };
 		223DEB962CEA5F2800B6DDCD /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */; };
 		223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DEB972CEA617B00B6DDCD /* LabeledText.swift */; };
+		224401B12D41664200CB982C /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224401B02D41663F00CB982C /* FriendService.swift */; };
+		224401B42D416F9B00CB982C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224401B32D416F9800CB982C /* Person.swift */; };
 		225492002CE8D33700F014F5 /* CryptoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225491FF2CE8D33300F014F5 /* CryptoStore.swift */; };
 		225492022CE8D4BD00F014F5 /* OSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225492012CE8D4B900F014F5 /* OSStatus.swift */; };
 		2285BE422C542B7A00BA5602 /* FriendsAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* FriendsAppState.swift */; };
@@ -26,6 +28,7 @@
 		2297DAD32D3AC0A900694CC2 /* RoomListServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD22D3AC0A400694CC2 /* RoomListServiceHandler.swift */; };
 		2297DAD52D3AC24C00694CC2 /* SlidingSyncVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD42D3AC24700694CC2 /* SlidingSyncVersion.swift */; };
 		2297DAD72D3ACB2300694CC2 /* SyncServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAD62D3ACB2300694CC2 /* SyncServiceHandler.swift */; };
+		2297DADD2D3B9E7C00694CC2 /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DADC2D3B9E6F00694CC2 /* FriendRequest.swift */; };
 		2297DAE52D3BC1F700694CC2 /* MatrixRustSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2297DAE42D3BC1F700694CC2 /* MatrixRustSDK */; };
 		2297DAED2D3D1B4500694CC2 /* SessionManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAEC2D3D1B3900694CC2 /* SessionManagement.swift */; };
 		2297DAEF2D3D1FD300694CC2 /* VerificationStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297DAEE2D3D1FCC00694CC2 /* VerificationStateHandler.swift */; };
@@ -47,6 +50,8 @@
 		22190D8C2CA74ACD00A65B44 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
 		223DEB952CEA5F2000B6DDCD /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
 		223DEB972CEA617B00B6DDCD /* LabeledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledText.swift; sourceTree = "<group>"; };
+		224401B02D41663F00CB982C /* FriendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendService.swift; sourceTree = "<group>"; };
+		224401B32D416F9800CB982C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		225491FF2CE8D33300F014F5 /* CryptoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoStore.swift; sourceTree = "<group>"; };
 		225492012CE8D4B900F014F5 /* OSStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSStatus.swift; sourceTree = "<group>"; };
 		2285BE412C542B7A00BA5602 /* FriendsAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAppState.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		2297DAD22D3AC0A400694CC2 /* RoomListServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListServiceHandler.swift; sourceTree = "<group>"; };
 		2297DAD42D3AC24700694CC2 /* SlidingSyncVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingSyncVersion.swift; sourceTree = "<group>"; };
 		2297DAD62D3ACB2300694CC2 /* SyncServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncServiceHandler.swift; sourceTree = "<group>"; };
+		2297DADC2D3B9E6F00694CC2 /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
 		2297DAEC2D3D1B3900694CC2 /* SessionManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagement.swift; sourceTree = "<group>"; };
 		2297DAEE2D3D1FCC00694CC2 /* VerificationStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationStateHandler.swift; sourceTree = "<group>"; };
 		22A097332CE677B3001B1CB7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				2297DAEC2D3D1B3900694CC2 /* SessionManagement.swift */,
 				225491FF2CE8D33300F014F5 /* CryptoStore.swift */,
+				224401B02D41663F00CB982C /* FriendService.swift */,
 				22CC258E2C568B8D00240431 /* LocationService.swift */,
 				2297DAD12D3ABABB00694CC2 /* Matrix */,
 			);
@@ -113,7 +120,9 @@
 		2285BE432C542C9E00BA5602 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				224401B32D416F9800CB982C /* Person.swift */,
 				2285BE442C542CDE00BA5602 /* Friend.swift */,
+				2297DADC2D3B9E6F00694CC2 /* FriendRequest.swift */,
 				2285BE4F2C544AE700BA5602 /* Location.swift */,
 				2285BE4C2C54441500BA5602 /* Helpers */,
 				220140CB2C63F7880033807F /* Services */,
@@ -299,11 +308,14 @@
 				22F56D0F2C4D6F13000E6E71 /* FriendsMapView.swift in Sources */,
 				2285BE502C544AE700BA5602 /* Location.swift in Sources */,
 				22CC25922C56EBE400240431 /* Logger.swift in Sources */,
+				2297DADD2D3B9E7C00694CC2 /* FriendRequest.swift in Sources */,
 				2297DAD52D3AC24C00694CC2 /* SlidingSyncVersion.swift in Sources */,
+				224401B12D41664200CB982C /* FriendService.swift in Sources */,
 				22F56D012C4D435C000E6E71 /* FriendsApp.swift in Sources */,
 				22F56D172C4D70A6000E6E71 /* FriendImageView.swift in Sources */,
 				2297DAD32D3AC0A900694CC2 /* RoomListServiceHandler.swift in Sources */,
 				223DEB982CEA618000B6DDCD /* LabeledText.swift in Sources */,
+				224401B42D416F9B00CB982C /* Person.swift in Sources */,
 				2297DAEF2D3D1FD300694CC2 /* VerificationStateHandler.swift in Sources */,
 				22A097342CE677B5001B1CB7 /* String.swift in Sources */,
 				228B05DC2C9705F400B45911 /* FriendDetailView.swift in Sources */,
