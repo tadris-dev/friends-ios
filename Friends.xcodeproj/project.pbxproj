@@ -24,6 +24,7 @@
 		22768AAD2D441CF90079D0CB /* RadarRadiusLinesMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AAB2D441CF20079D0CB /* RadarRadiusLinesMask.swift */; };
 		22768ABA2D4420840079D0CB /* RadarSweepLineMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AB92D4420840079D0CB /* RadarSweepLineMask.swift */; };
 		22768AC02D4420B60079D0CB /* LocationPuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768ABF2D4420B60079D0CB /* LocationPuck.swift */; };
+		22768AE12D4427710079D0CB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768ADF2D4427700079D0CB /* Font.swift */; };
 		22768AF52D442B3A0079D0CB /* CallToActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768AF32D442AF00079D0CB /* CallToActionButtonStyle.swift */; };
 		22768B022D44352B0079D0CB /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22768B002D4435260079D0CB /* ButtonStyle.swift */; };
 		2285BE422C542B7A00BA5602 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285BE412C542B7A00BA5602 /* AppState.swift */; };
@@ -76,6 +77,7 @@
 		22768AAB2D441CF20079D0CB /* RadarRadiusLinesMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarRadiusLinesMask.swift; sourceTree = "<group>"; };
 		22768AB92D4420840079D0CB /* RadarSweepLineMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSweepLineMask.swift; sourceTree = "<group>"; };
 		22768ABF2D4420B60079D0CB /* LocationPuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPuck.swift; sourceTree = "<group>"; };
+		22768ADF2D4427700079D0CB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		22768AF32D442AF00079D0CB /* CallToActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToActionButtonStyle.swift; sourceTree = "<group>"; };
 		22768B002D4435260079D0CB /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		2285BE412C542B7A00BA5602 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				2285BE4A2C54378B00BA5602 /* Binding.swift */,
 				22768B002D4435260079D0CB /* ButtonStyle.swift */,
+				22768ADF2D4427700079D0CB /* Font.swift */,
 				22CC25912C56EBE400240431 /* Logger.swift */,
 				225492012CE8D4B900F014F5 /* OSStatus.swift */,
 				220140C72C63F3A60033807F /* Publisher.swift */,
@@ -403,6 +406,7 @@
 				2285BE4B2C54378B00BA5602 /* Binding.swift in Sources */,
 				22190D8D2CA74ADF00A65B44 /* Geocoding.swift in Sources */,
 				2285BE422C542B7A00BA5602 /* AppState.swift in Sources */,
+				22768AE12D4427710079D0CB /* Font.swift in Sources */,
 				22F56D192C4E630A000E6E71 /* FriendsListView.swift in Sources */,
 				2297DACD2D35135000694CC2 /* DebugTestView.swift in Sources */,
 				220140C82C63F3A80033807F /* Publisher.swift in Sources */,
